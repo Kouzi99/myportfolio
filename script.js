@@ -1,1 +1,1 @@
-document.querySelectorAll('linkItems')
+document.addEventListener("touchstart", function() {}, true);
