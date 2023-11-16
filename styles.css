@@ -1,9 +1,20 @@
 body{
+    scroll-behavior: smooth;
     background-color: #444448;
     font-family: 'Montserrat', sans-serif;
     height: 100%;
     margin: 0;
 }
+html{
+    scroll-snap-type: y mandatory;
+}
+.section {
+
+    scroll-snap-align: start;
+
+}
+
+
 /* Welcome section */
         #welcome-section {
             position: fixed;
@@ -16,7 +27,7 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
-            animation: fadeOut 2s forwards;
+            animation: fadeOut 3s forwards;
         }
     
         #logo {
@@ -39,7 +50,7 @@ body{
 
 
 .show {
-    animation: fadeInAnimation cubic-bezier(.39, .09, .25, .94) 3s;
+    animation: fadeInAnimation cubic-bezier(.39, .09, .25, .94) 6s ;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -116,16 +127,17 @@ body{
     } 
 } */
 .welcome {
+    height: 100vh;
     text-align: left;
-    height: 100%;
+    
     display: grid;
     grid-template-columns: repeat(9, 12%);
     grid-template-rows: repeat(7, 15%);
     gap: 0 0;
     grid-auto-flow: row;
     grid-template-areas:
+        ". i i i . . . . . "
         ". . . . . . . . . "
-        ". i i . . . . . . "
         ". . j j . . . . . "
         ". . . v v . . . . "
         ". . . . g g . . . "
@@ -135,6 +147,7 @@ body{
 
 .i {
     grid-area: i;
+    font-size: 1vh;
 }
 
 .j {
@@ -208,3 +221,144 @@ body{
      }
  }
  
+
+ /* section Brand */
+ #brand{
+    width: 100vw;
+    height: 100vh;
+ }
+ .contentGrid{
+    width: 100%;
+        height: 100%;
+    display: grid;
+    gap: 0 0;
+        grid-auto-flow: row;
+    grid-template-columns: 7fr 3fr;;
+    grid-template-rows: repeat(5, 20%);
+    grid-template-areas:
+            "aA . "
+            "bB . "
+            "cC . "
+            "dD . "
+            "eE . ";
+ }
+ .aA{
+    letter-spacing: 1vw;
+    color: aliceblue;
+    grid-area: aA;
+    text-align: center;
+    font-size: 10vh;
+ }
+ .bB{
+    letter-spacing: 1vw;
+    font-size: 2vw;
+    font-weight: 500;
+    grid-area: bB;
+    margin-left: 3vw;
+ }
+ .cC{
+    word-spacing: 0.5vw;
+    grid-area: cC;
+    margin-left: 10vw;
+ }
+ .dD{
+    grid-area: dD;
+ }
+.eE{
+    grid-area: eE;
+}
+
+@media only screen and (max-width: 600px) {
+    .contentGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
+        grid-template-rows: auto;
+        /* or specific row heights if needed */
+        gap: 20px;
+    }
+ .aA {
+     letter-spacing: 4vw;
+     color: aliceblue;
+     grid-area: aA;
+     text-align: center;
+     font-size: 4vw;
+     
+ }
+
+ .bB {
+     letter-spacing: 1vw;
+     font-size: 3vw;
+     font-weight: 500;
+     grid-area: bB;
+     margin-left: 3vw;
+ }
+
+ .cC {
+     word-spacing: 0.5vw;
+     grid-area: cC;
+     margin-left: 10vw;
+ }
+
+ .dD {
+     grid-area: dD;
+ }
+
+ .eE {
+     grid-area: eE;
+ }
+
+}
+
+
+ /* on scroll animation */
+ .animated-element {
+     opacity: 0;
+     /* Initially hidden */
+     transition: opacity 1s ease-in-out;
+     /* Add a smooth transition effect */
+ }
+  .in-viewport {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+ .aA{
+    font-size: 2vw;
+ }
+
+
+
+
+ /* about me */
+
+.contactSection {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    gap: 0 0;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "aA ."
+        "bB ."
+        ". bB"
+        ". ."
+        ". .";
+}
+
+.aA {
+    letter-spacing: 1vw;
+    color: aliceblue;
+    grid-area: aA;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.bB {
+    letter-spacing: 1vw;
+    font-size: 2vw;
+    font-weight: 500;
+    grid-area: bB;
+    margin-left: 3vw;
+}
