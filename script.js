@@ -28,3 +28,6 @@ document.addEventListener("touchstart", function() {}, true);
 
 // about me
 
+// design
+
+  
