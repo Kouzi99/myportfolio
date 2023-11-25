@@ -14,6 +14,10 @@ html{
 
 }
 
+a{
+    text-decoration: none;
+    color: #000000;
+}
 
 /* Welcome section animation on load  */
         #welcome-section {
@@ -394,18 +398,21 @@ html{
 .wave {
     position: absolute;
     top: -30vh;
-    left: 0;
+    left: -10vw;
     z-index: -1;
     height: 100vh;
     width: 100vw;
+    width: 150%;
 }
 
 #Layer_1{
+    
     width: 100%;
     height: 100%;
 }
 
 .st1 {
+    
     position: absolute;
     fill: none;
     stroke: #000000;
@@ -414,19 +421,5 @@ html{
 
 
 
-.wave {
-    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
-}
 
-
-
-@keyframes move-forever {
-    0% {
-        transform: translate3d(-90px, 0, 0);
-    }
-
-    100% {
-        transform: translate3d(85px, 0, 0);
-    }
-}
 
