@@ -329,14 +329,16 @@ a{
     font-size: 2vw;
  }
 
-
+a{
+    color: aliceblue;
+}
 
 
  .aboutMe{
     margin-top: 1vw;
     letter-spacing: 1vw;
-        font-size: 3vw;
-        font-weight: 500;
+    font-size: 3vw;
+    font-weight: 500;
     height: 100vh;
  }
 
@@ -350,6 +352,8 @@ a{
     grid-template-columns: 1fr 1fr;
     align-content: center;
     justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 
