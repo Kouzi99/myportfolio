@@ -342,6 +342,21 @@ a{
     height: 100vh;
  }
 
+.marginMargin{
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+.smallFont{
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+ .aboutMeGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+
 .creative{
     letter-spacing: 1vw;   
     font-weight: 500;
@@ -394,6 +409,17 @@ a{
 
 
 /* DESIGN WEBSIDE CSS */
+ .contentGridDesign {
+     width: 100vw;
+     height: 100vh;
+     display: grid;
+     gap: 0 0;
+     grid-auto-flow: row;
+     grid-template-columns: 1fr 1fr;
+     
+    /* grid-template-columns: repeat(auto-fill, minmax(0, 1fr)); */
+    
+ }
 .brand {
     margin: 0;
     z-index: 1;
@@ -426,7 +452,10 @@ a{
     stroke-miterlimit: 100;
 }
 
-
+.row{
+    display: grid;
+    grid-auto-flow: row;
+}
 
 
 
