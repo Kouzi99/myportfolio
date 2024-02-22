@@ -1,24 +1,32 @@
+*{
+    scrollbar-width: none;
+    max-width: 100vw;
+}
+
 body{
     scroll-behavior: smooth;
     background-color: #444448;
     font-family: 'Montserrat', sans-serif;
     height: 100%;
     margin: 0;
+    scrollbar-width: none;
 }
 html{
     scroll-snap-type: y mandatory;
+    
+    
 }
 .section {
-
-    scroll-snap-align: start;
-
+    
+    scroll-snap-type: mandatory;
+    max-height: 100vh;
+   
+    
 }
-
 a{
     text-decoration: none;
     color: #000000;
 }
-
 /* Welcome section animation on load  */
         #welcome-section {
             position: fixed;
@@ -54,7 +62,7 @@ a{
 
 /* animation to fade in elements */
 .show {
-    animation: fadeInAnimation cubic-bezier(.39, .09, .25, .94) 6s ;
+    animation: fadeInAnimation cubic-bezier(.39, .09, .25, .94) 2s ;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -68,30 +76,25 @@ a{
         opacity: 1;
     }
 }
-
 .main{
     width: 100vw;
     height: 100vh;
     
 }
 .small:hover {
-
     transition: transform 0.3s ease;
     transform: scale(1.2);
 }
 .small{
     letter-spacing: 0.3em;
         font-size: 200%;
-        color: white;
-        
+        color: white;     
 }
-.top{
-    
-    
+.top{  
+   
     width: 100%;
     height: 100%;
-    display: grid;
-    
+    display: grid; 
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: repeat(5, 20%);
     gap: 0 0;
@@ -102,44 +105,32 @@ a{
         ". . b . . . . . . . "
         ". . . c . . . . . . "
         ". . . . . . . . . . ";
-
 }
 .a {
     grid-area: a;
 }
-
 .b {
     grid-area: b;
 }
-
 .c {
     grid-area: c;
 }
-
 .linkItems:hover {
-    -webkit-overflow-scrolling: touch;
-    transition: transform 0.3s ease;
+    
+    
     transform: scale(1.2);
 }
-
 .linkItems{
     letter-spacing: 0.3em;
-    font-size: 300%;
-    color: white;
-    
+    font-size: 100%;
+    color: white;  
 }
-
-       
-    
-
  #line {
      position: absolute;
      top: 0;
      left: 0;
      z-index: -1;
  }
-       
-
  .lineAnime {
      stroke-dasharray: 10000;
      stroke-dashoffset: 100;
@@ -246,7 +237,6 @@ a{
 
 }
 
-
  /* on scroll animation */
  .animated-element {
      opacity: 0;
@@ -266,8 +256,6 @@ a{
 a{
     color: aliceblue;
 }
-
-
  .aboutMe{
     margin-left: 10px;
     display: grid;
@@ -277,17 +265,10 @@ a{
     font-weight: 50;
     height: 100vh;
  }
- 
-
 .marginMargin{
     padding-top: 20px;
     margin-left: 30px;
 }
-
-
-
-
-
 .creative{
     letter-spacing: 1vw;   
     font-weight: 400;
@@ -301,17 +282,13 @@ a{
     justify-content: center;
     align-items: center;
     justify-items: center;
-    
     height: 100vh;
     width: 100vw;
-    
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 .box{
     margin: 10px;
 }
-
-
 .contactSection {
     width: 100vw;
     height: 100vh;
