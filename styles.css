@@ -81,6 +81,7 @@ a{
     height: 100vh;
     
 }
+
 .small:hover {
     transition: transform 0.3s ease;
     transform: scale(1.2);
