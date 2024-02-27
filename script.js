@@ -86,8 +86,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-
-
-   
+//routing
+ 
