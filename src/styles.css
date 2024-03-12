@@ -1,0 +1,17 @@
+/* Example: Apply transitions to all elements */
+* {
+    transition-property: background-color, color, border-color, fill, stroke;
+    transition-duration: 500ms;
+    /* Adjust duration as needed */
+    transition-timing-function: ease-in-out;
+    /* Or a different timing function*/
+}
+
+ul {
+    display: none;
+}
+
+h3:hover+ul,
+h3:focus+ul {
+    display: block;
+}

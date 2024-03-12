@@ -22,49 +22,42 @@
     <link rel="icon" type="image/x-icon" href="/foto/logo.ico">
     
 </head>
-<body class="raleway-500-semi justify-center flex flex-col min-h-screen bg-white dark:bg-black">
+
+<body class="raleway-500-semi justify-center flex flex-col  bg-white dark:bg-black">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-537SJT98" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     
-    <div class=" bg-white flex flex-col  text-black dark:bg-black dark:text-white " >
-        <button id="theme-toggle" type="button" title="switch between themes" class="flex justify-center"
-            >
-            <svg id="theme-toggle-dark-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-            </svg>
-            <svg id="theme-toggle-light-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                    fill-rule="evenodd" clip-rule="evenodd"></path>
-            </svg>
-        </button>
+    <div  class=" bg-white flex flex-col  text-black dark:bg-black dark:text-white " >
+         <div class="flex [&>button]:m-2">
+            
+            <button id="theme-toggle-dark" class="theme-toggle-dark-icon hover:scale-150 transition">Dark</button>
+            <button id="theme-toggle-light" class="theme-toggle-light-icon hover:scale-150 transition">Light</button>
+            
+        </div>
+
+        
+
         <div>
-            <h1 class="text-2xl flex justify-center">Kozak Adam</h1>
-            <h1 class="text-xl">Hello, welcome to my portfolio webside, from here you can redirect yourself for more information.</h1>
-            <h2>AboutMe</h2>
+            <h1 class="text-2xl flex justify-center m-5">Kozak Adam</h1>
+            <h2 class="text-l flex justify-center" >Hello, welcome to my portfolio webside, from here you can redirect yourself for more information.</h2>
+            <h2 class="flex justify-center">AboutMe</h2>
     
         </div>
     
         
     
     
-        <div>
-            <p>As a professional volleyball player and master student of society, security, and logistics process
-                engineering, I am
-                passionate about optimizing systems and processes for meaningful societal impact. I am also a web developer
-                with a
-                keen interest in data science.
+        <div class="flex justify-center">
+            <p class="flex justify-center m-5">AI am a Business Process Analyst with a strong background in information technology. I leverage my analytical skills and
+            technical expertise to build secure websites, optimize processes, and analyze large datasets. This combination allows me
+            to drive efficiency and make data-driven decisions that contribute to positive business outcomes.
             </p>
         </div>
-        <div>
-            <p> </p>
-        </div>
+        
     
-        <div>
+        <div class="flex justify-center m-5">
             <h3>Languages</h3>
             <ul>
                 <li>Polish</li>
@@ -78,45 +71,77 @@
             </ul>
         </div>
 
-        <div>
+        <div class="flex justify-center flex-row m-6 text-xl">
         
         
             <div>
-                <h1><a href="./src/design.html">Design</a></h1>
+                <h3 class="m-6"><a href="./src/design.html">Design</a></h3>
         
         
             </div>
         
-            <div class="card">
-                <h1 class="animate-pulse"><a href="https://development.kozakadam.eu/">Development</a></h1>
+            <div >
+                <h3 class="m-6"><a href="https://development.kozakadam.eu/">Development</a></h3>
         
             </div>
             <div>
-                <h1 class="animated-element linkItems"><a href="./src/data.html">Data analyse</a></h1>
+                <h3 class="m-6"><a href="./src/data.html">Data analyse</a></h3>
         
             </div>
         
         </div>
         
         <div>
-            <div class="f">
-                <h1 class="animated-element">Contact</h1>
-                <div class="iconscenter flex">
-                    <h1 class="animated-element ">Social media </h1>
-                    <a href="https://www.facebook.com/adam.kozak.13/"><img class="iconlinks" src="./foto/facebook.png"
-                            alt="faceook icon"></a>
-                    <a href="https://www.instagram.com/kozakadam_/"><img class="iconlinks" src="./foto/instagram.png"
-                            alt=""></a>
-                    <a href="https://www.linkedin.com/in/techkozakadam"><img class="iconlinks" src="./foto/linkedin.png"
-                            alt=""></a>
-                    <a href="https://twitter.com/kozakadam99"><img class="iconlinks" src="./foto/twitter.png" alt=""></a>
-                    <a href="https://github.com/Kouzi99"><img class="iconlinks" src="./foto/github.png" alt=""></a>
-                    <a href="https://www.threads.net/@kozakadam_"><img class="iconlinks" src="./foto/threads.png" alt=""></a>
+            <div >
+                <h1 class="flex justify-center">Contact</h1>
+                <div >
+                    
+                    <h1 class="flex justify-center">Social media </h1>
+                    <div class="flex flex-row justify-center [&>a]:m-2">
+                        <a href="https://www.facebook.com/adam.kozak.13/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                        </a>
+                    
+                        <a href="https://www.instagram.com/kozakadam_/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/techkozakadam">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/Kouzi99">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                        
+                        <a href="https://www.threads.net/@kozakadam_">
+                            <svg width="30" height="30" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor"
+                                    d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    
                 </div>
-                <div>
-                    <h3>Or</h3>
-                    <p class="marginLeft" style="font-size: small;">Czech Republic</p>
-                    <p class="marginLeft" style="font-size: small;">Zlin</p>
+                
+
+                <div class="flex justify-center">
+                    <h3 class="flex flex-col">Or</h3>
+                    <p class="flex flex-col" >Czech Republic</p>
+                    <p class="flex flex-col" >Zlin</p>
                 </div>
             </div>
         
